@@ -1,0 +1,10 @@
+# Local Mentorship Guidelines
+GEMINI.md
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.swp
+*.log
