@@ -3,7 +3,7 @@
 ## Objective
 To gain deep, high-fidelity visibility into the Windows 11 target, we are deploying **Microsoft Sysmon**. This allows us to track process creation, network connections, and file system changes with much more detail than standard Windows Event Logs.
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 - **Source:** [Microsoft Sysinternals](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
 - **Configuration:** [Olaf Hartong's Sysmon-Modular](https://github.com/olafhartong/sysmon-modular) (A professionally maintained, MITRE ATT&CK-mapped configuration).
 
@@ -13,7 +13,7 @@ To gain deep, high-fidelity visibility into the Windows 11 target, we are deploy
 ![Sysmon in Event Viewer](../assets/images/Phase3_Sysmon_first_look.png)
 *(Screenshot: Sysmon events being populated in the Windows Event Viewer after successful installation.)*
 
-## 📊 Key Sysmon Event IDs to Monitor
+## Key Sysmon Event IDs to Monitor
 | Event ID | Description | Why it matters to a SOC Analyst |
 | :--- | :--- | :--- |
 | **1** | Process Creation | Tracks what programs are running and their full command line. Essential for detecting "Living off the Land" attacks. |
@@ -21,7 +21,7 @@ To gain deep, high-fidelity visibility into the Windows 11 target, we are deploy
 | **11** | FileCreate | Tracks when new files are created. Detects malware dropping payloads or stage-two tools. |
 | **22** | DNS Query | Logs DNS lookups. Vital for spotting DGA (Domain Generation Algorithms) or connections to known bad domains. |
 
-## 📁 Configuration File Analysis: Olaf Hartong (Sysmon-Modular)
+## Configuration File Analysis: Olaf Hartong (Sysmon-Modular)
 **Rating: 10/10 (Industry Standard)**
 
 This configuration is widely considered the "Gold Standard" for several reasons:
