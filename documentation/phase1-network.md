@@ -14,16 +14,20 @@ To ensure secure isolation of the lab environment while maintaining essential co
 - **Mode:** NAT
 - **Reason:** To allow VMs to access the internet for initial updates, software downloads (Splunk, Sysmon), and OS activation.
 
-### Final Target Configuration:
-- **Network Name:** `SOC_Lab_Net` (Internal Network)
-- **Subnet:** (e.g., 10.0.0.0/24)
-- **IP Assignment:** (e.g., Static IPs for Splunk server)
+### Final Target Configuration (Sandboxed Environment):
+- **Network Name:** `SOC-Isolated`
+- **Network Type:** Isolated (No Host/Internet Access)
+- **Subnet:** `192.168.100.0/24`
+- **DHCP:** Disabled (Manual Assignment)
 
 ## Virtual Machine Inventory:
-| VM Name | OS | RAM | Storage | Role |
-| :--- | :--- | :--- | :--- | :--- |
-| **Windows-11-Target** | Windows 11 Pro | 4GB+ | 60GB | Splunk Server & Telemetry Source |
-| **Kali-Linux** | Kali Rolling | 2GB | 30GB | Attack Simulation Node |
+| VM Name | OS | Static IP | Role |
+| :--- | :--- | :--- | :--- |
+| **Windows-11-Target** | Windows 11 Pro | `192.168.100.20` | Splunk Server & Telemetry Source |
+| **Kali-Linux** | Kali Rolling | `192.168.100.10` | Attack Simulation Node |
+
+## Connectivity Verification
+- **Ping Test:** Connectivity confirmed via successful `ping` from `192.168.100.20` to `192.168.100.10`.
 
 ## Troubleshooting & Networking Fixes
 
