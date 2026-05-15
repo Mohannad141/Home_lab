@@ -35,4 +35,4 @@ This configuration is widely considered the "Gold Standard" for several reasons:
 - `onmatch="exclude"`: Tells Sysmon to ignore the event (used for noisy, safe processes).
 
 ---
-*Documentation updated as of: April 19, 2026*
+*Documentation updated as of: May 15, 2026*
