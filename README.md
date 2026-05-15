@@ -16,9 +16,9 @@ The project demonstrates the ability to deploy, configure, and monitor an enterp
 ## Lab Setup & Configuration
 Detailed step-by-step documentation for each phase of the lab setup:
 
-1. [Phase 1: Networking & Virtualization](./documentation/phase1-network.md)
-2. [Phase 2: Splunk Installation & Indexing](./documentation/phase2-splunk-install.md) (Work in Progress)
-3. [Phase 3: Sysmon & Telemetry Collection](./documentation/phase3-sysmon-config.md) (Planned)
+1. [Phase 1: Networking & Virtualization](./documentation/phase1-network.md) (Completed)
+2. [Phase 2: Splunk Installation & Indexing](./documentation/phase2-splunk-install.md) (Completed)
+3. [Phase 3: Sysmon & Telemetry Collection](./documentation/phase3-sysmon-config.md) (Completed)
 4. [Phase 4: Threat Simulation & Alerting](./documentation/phase4-threat-simulation.md) (Planned)
 
 ## Configuration Artifacts
